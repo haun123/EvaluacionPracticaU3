@@ -28,20 +28,20 @@ $medicamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
 <div class="container mt-5">
-    <h1 class="mb-4">Panel de Inventario</h1>
+    <h1 class="mb-4 text-primary">Panel de Inventario</h1>
 
     <a href="registro.php" class="btn btn-success mb-3">Agregar Medicamento</a>
 
     <table class="table table-striped table-primary table-bordered text-center align-middle">
         <thead >
             <tr>
-                <th class="bg-primary">ID</th>
-                <th class="bg-primary">Nombre</th>
-                <th class="bg-primary">Categoría</th>
-                <th class="bg-primary">Cantidad</th>
-                <th class="bg-primary">Precio</th>
-                <th class="bg-primary">Proveedor</th>
-                <th class="bg-primary">Acciones</th>
+                <th class="bg-primary text-white">ID</th>
+                <th class="bg-primary text-white">Nombre</th>
+                <th class="bg-primary text-white">Categoría</th>
+                <th class="bg-primary text-white">Cantidad</th>
+                <th class="bg-primary text-white">Precio</th>
+                <th class="bg-primary text-white">Proveedor</th>
+                <th class="bg-primary text-white">Acciones</th>
             </tr>
         </thead>
         <tbody>
