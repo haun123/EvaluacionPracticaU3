@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body class="d-flex align-items-center vh-100">
 
-    <div class="container">
+    <div class="container ">
         
         <div class="bg-primary text-center p-4 rounded-3" style="max-width: 80%; margin-left: auto; margin-right: auto;">
             
