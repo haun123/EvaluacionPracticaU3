@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -47,8 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p><?= $mensaje ?></p>
 <?php endif; ?>
 
-<div class="container mt-4">
-<form method="POST">
+<div class="container text-center">
+<form method="POST" class="">
     <input type="email" name="email" placeholder="Correo" required>
     <input type="password" name="clave" placeholder="Contraseña" required>
     <button type="submit">Ingresar</button>
