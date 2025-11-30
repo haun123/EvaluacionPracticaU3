@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="container">
         
-        <div class="bg-primary text-center p-4 rounded-3" style="max-width: 450px; margin-left: auto; margin-right: auto;">
+        <div class="bg-primary text-center p-4 rounded-3" style="max-width: 80%; margin-left: auto; margin-right: auto;">
             
             <h1 class="text-white mb-4">Login</h1>
 
