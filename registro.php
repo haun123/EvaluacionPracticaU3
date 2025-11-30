@@ -95,8 +95,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
         <div class="d-flex justify-content-between">
-            <button type="submit" class="btn bg-white text-info btn-hover w-49"><b>Registrar</b></button>
-            <a href="panel.php" class="btn bg-white btn-hover w-49 text-center"><b>Volver al Panel</b></a>
+            <button type="submit" class="btn bg-info text-white btn-hover w-46"><b>Registrar</b></button>
+            <a href="panel.php" class="btn bg-secondary text-white btn-hovertext-center"><b>Volver al Panel</b></a>
         </div>
     </form>
 </div>
