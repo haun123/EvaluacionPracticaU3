@@ -49,7 +49,7 @@ $medicamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h1 class="mb-4 text-info text-center">Panel de Inventario</h1>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <a href="registro.php" class="btn btn-info text-white">Agregar Medicamento</a>
+        <a href="registro.php" class="btn btn-info text-white"><b>Agregar Medicamento</b></a>
 
         <!-- Formulario de filtro por categoría -->
         <form method="GET" class="d-flex">
@@ -61,7 +61,7 @@ $medicamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </option>
                 <?php endforeach; ?>
             </select>
-            <button type="submit" class="btn btn-info text-white">Filtrar</button>
+            <button type="submit" class="btn btn-info text-white"><b>Filtrar</b></button>
         </form>
     </div>
 
