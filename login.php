@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container mt-5">
 <div class="card text-center bg-primary p-4">
 
-<h1 class="text-white">Login</h1>
+<h1 class="text-white mb-4">Login</h1>
 
 <?php if($mensaje != ""): ?>
     <p><?= $mensaje ?></p>
@@ -52,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <form method="POST">
-    <input type="email" name="email" placeholder="Correo" class="form-control" required>
-    <input type="password" name="clave" placeholder="Contraseña" required>
-    <button type="submit" class="btn bg-white text-primary">Ingresar</button>
+    <input type="email" name="email" placeholder="Correo" class="form-control mb-4" required>
+    <input type="password" name="clave" placeholder="Contraseña" class="form-control mb-4" required>
+    <button type="submit" class="btn bg-white text-primary mb-4">Ingresar</button>
 </form>
 </div>
 </div>
