@@ -41,18 +41,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
+<div class="container mt-5">
+<div class="card text-center">
+
 <h1>Login</h1>
 
 <?php if($mensaje != ""): ?>
     <p><?= $mensaje ?></p>
 <?php endif; ?>
 
-<div class="container text-center">
+
 <form method="POST" class="">
     <input type="email" name="email" placeholder="Correo" required>
     <input type="password" name="clave" placeholder="Contraseña" required>
     <button type="submit">Ingresar</button>
 </form>
+</div>
 </div>
 
 
