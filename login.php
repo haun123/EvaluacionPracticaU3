@@ -12,15 +12,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $db = new Database();
         $pdo = $db->conectar();
 
-        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email");
+        // Solo buscamos si existe el correo
+        $stmt = $pdo->prepare("SELECT clave FROM usuarios WHERE email = :email");
         $stmt->bindParam(":email", $email);
         $stmt->execute();
 
-        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+        $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($usuario && password_verify($clave, $usuario['clave'])) {
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nombre'] = $usuario['nombre'];
+        if ($resultado && password_verify($clave, $resultado['clave'])) {
+            // Usuario válido, puede redirigir directamente
             header("Location: panel.php");
             exit;
         } else {
