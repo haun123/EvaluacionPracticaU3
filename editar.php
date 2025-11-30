@@ -100,8 +100,8 @@ $proveedores = $prov_stmt->fetchAll(PDO::FETCH_ASSOC);
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">Actualizar</button>
-        <a href="panel.php" class="btn btn-secondary">Cancelar</a>
+        <button type="submit" class="btn btn-info"><b>Actualizar</b></button>
+        <a href="panel.php" class="btn btn-secondary"><b>Cancelar</b></a>
     </form>
 </div>
 
