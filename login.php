@@ -39,24 +39,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex align-items-center vh-100">
 
-<div class="container mt-4">
-<div class="card text-center bg-primary p-4 h-100">
+    <div class="container">
+        
+        <div class="bg-primary text-center p-4 rounded-3" style="max-width: 450px; margin-left: auto; margin-right: auto;">
+            
+            <h1 class="text-white mb-4">Login</h1>
 
-<h1 class="text-white mb-4">Login</h1>
+            <?php if($mensaje != ""): ?>
+                <p><?= $mensaje ?></p>
+            <?php endif; ?>
 
-<?php if($mensaje != ""): ?>
-    <p><?= $mensaje ?></p>
-<?php endif; ?>
-
-
-<form method="POST">
-    <input type="email" name="email" placeholder="Correo" class="form-control mb-4" required>
-    <input type="password" name="clave" placeholder="Contraseña" class="form-control mb-4" required>
-    <button type="submit" class="btn bg-white text-primary mb-4">Ingresar</button>
-</form>
-</div>
-</div>
+            <form method="POST">
+                <input type="email" name="email" placeholder="Correo" class="form-control mb-4" required>
+                <input type="password" name="clave" placeholder="Contraseña" class="form-control mb-4" required>
+                <button type="submit" class="btn bg-white text-primary mb-4">Ingresar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
