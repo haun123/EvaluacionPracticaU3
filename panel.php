@@ -28,9 +28,9 @@ $medicamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
 <div class="container mt-5">
-    <h1 class="mb-4 text-primary">Panel de Inventario</h1>
+    <h1 class="mb-4 text-primary text-center">Panel de Inventario</h1>
 
-    <a href="registro.php" class="btn btn-success mb-3">Agregar Medicamento</a>
+    <a href="registro.php" class="btn btn-info mb-3">Agregar Medicamento</a>
 
     <table class="table table-striped table-primary table-bordered text-center align-middle">
         <thead >

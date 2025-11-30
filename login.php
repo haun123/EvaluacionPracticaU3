@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="container ">
         
-        <div class="bg-primary text-center p-4 rounded-3" style="max-width: 80%; margin-left: auto; margin-right: auto;">
+        <div class="bg-info text-center p-4 rounded-3" style="max-width: 80%; margin-left: auto; margin-right: auto;">
             
             <h1 class="text-white mb-4">Login</h1>
 
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form method="POST">
                 <input type="email" name="email" placeholder="Correo" class="form-control mb-4" required>
                 <input type="password" name="clave" placeholder="Contraseña" class="form-control mb-4" required>
-                <button type="submit" class="btn bg-white text-primary mb-4">Ingresar</button>
+                <button type="submit" class="btn bg-white text-info mb-4">Ingresar</button>
             </form>
         </div>
     </div>
