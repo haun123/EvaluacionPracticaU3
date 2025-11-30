@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
-<div class="container mt-5">
-<div class="card text-center bg-primary p-4">
+<div class="container mt-4">
+<div class="card text-center bg-primary p-4 h-100">
 
 <h1 class="text-white mb-4">Login</h1>
 
