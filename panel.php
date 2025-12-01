@@ -10,11 +10,11 @@ if (!isset($_SESSION['id'])) {
 $db = new Database();
 $pdo = $db->conectar();
 
-// Obtener todas las categorías disponibles
+// Obtener todas las categorias disponibles
 $categoria_stmt = $pdo->query("SELECT DISTINCT categoria FROM medicamentos");
 $categorias = $categoria_stmt->fetchAll(PDO::FETCH_COLUMN);
 
-// Revisar si se seleccionó una categoría para filtrar
+// Revisar si se selecciono una categoría para filtrar
 $filtro_categoria = $_GET['categoria'] ?? '';
 
 if ($filtro_categoria) {
@@ -51,7 +51,6 @@ $medicamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="d-flex justify-content-between align-items-center mb-3">
         <a href="registro.php" class="btn btn-info text-white"><b>Agregar Medicamento</b></a>
 
-        <!-- Formulario de filtro por categoría -->
         <form method="GET" class="d-flex">
             <select name="categoria" class="form-select me-2">
                 <option value="">Todas las categorías</option>
